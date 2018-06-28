@@ -1,0 +1,649 @@
+/* ******* GENERAL ******* */
+body {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+ul {
+  display: flex;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #c3c7cc;
+}
+
+/* ******* NAVBAR ******* */
+.navbar .navbar-brand {
+  color: #333;
+  transition: color .6s;
+}
+
+.navbar-brand {
+  margin-right: 40px;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(162, 155, 155);
+}
+
+.logo_euralens {
+  margin-right: 30px;
+}
+
+/* Gestion des logos */
+.logo_euralens {
+  height: 12vh;
+}
+
+.logo_rs img {
+  height: 4vh;
+  margin-right: 10px;
+}
+
+.sociaux {
+  margin-right: 30px;
+}
+
+.langue {
+  float: right;
+  margin-right: 20px;
+}
+
+.logo_langue img {
+  height: 5vh;
+  margin-right: 10px;
+}
+
+/* Lorsque l'écran fait moins de 600 pixels de large, masquez tous les liens, sauf le premier ("Accueil"). */
+/* Afficher le lien qui contient devrait ouvrir et fermer le topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .sociaux {
+    display: none;
+  }
+  .langue {
+      display: none;
+  }
+}
+
+/* ******* CAROUSEL ******* */
+.deco_car {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}
+
+@keyframes hue-rotate {
+  0% {filter:hue-rotate(0);}
+  10%{filter:hue-rotate(36deg);}
+  20%{filter:hue-rotate(72deg);}
+  30%{filter:hue-rotate(108deg);}
+  40%{filter:hue-rotate(144deg);}
+  50%{filter:hue-rotate(180deg);}
+  60%{filter:hue-rotate(144deg);}
+  70%{filter:hue-rotate(108deg);}
+  80%{filter:hue-rotate(72deg);}
+  90%{filter:hue-rotate(36deg);}
+  100%{filter:hue-rotate(0);}
+ }
+
+.hue-rotate{
+  animation:hue-rotate 60s infinite;
+  
+ }
+
+#carouselExampleSlidesOnly {
+  height: 85vh;
+  max-height: 85vh;
+  overflow: hidden;
+}
+
+/* ******* ODYSSÉE ET PROGRAMME ******* */
+.logoodyssee {
+  height: 250px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#megamorphose {
+  background-color: #ffffff;
+  width: 50%;
+  height: 428px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#programme {
+  background-image: url("/img/body/phph.jpg");
+  width: 50%;
+  height: 428px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.lien {
+  color: white;
+  font-size: 24px;
+}
+
+.btn-primary-pro {
+  margin-left: 200px;
+  margin-top: 300px;
+  font-size: 40px;
+  color: black;
+  border: black;
+  background-color: #f8f9fa;
+}
+
+/* ******* UNE ******* */
+.contentU {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-image: url("/img/pgenscene/routedulouvrelens.jpg");
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
+.texteU {
+  position: absolute;
+  top: 70px;
+  margin: 150px 40px 60px 40px;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.encart {
+  width: 20%;
+  position: relative;
+  margin: 40px 40px 40px 40px;
+  height: 400px;
+}
+
+.bd {
+  box-shadow: 5px 5px 8px;
+}
+
+#une {
+  height: 80px;
+  width: 70%;
+  margin: 40px 40px 0px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* ******* JE M'IMPLIQUE ET JE SEJOURNE ******* */
+#implique {
+  background-image: url("/img/body/implique.jpg");
+  width: 50%;
+  height: 428px;
+  box-shadow: 3px, 3px, 3px, black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+}
+
+#sejourne {
+  background-image: url("/img/pgsejourne/sejourne.jpg");
+  width: 50%;
+  height: 428px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  
+}
+
+.liensejourne {
+  color: black;
+  font-size: 24px;
+}
+
+/* POPUP */
+.btn-primary {
+  color: dimgray;
+  background-color: #f8f9fa;
+  border: #f2f2db;
+  margin-left: 500px;
+}
+
+/* BOUTON  */
+.impliquer {
+  padding: 70px, 50px, 50px 50px;
+}
+
+/* ******* PAGE ODYSSEE ******* */
+.contentodyssee {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  background-size: cover;  
+  overflow: hidden;
+ }
+
+.container {
+  margin-top: 40px;
+}
+
+.row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row2 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top: 50px;
+}
+
+.realisation {
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.row2 .logoOT {
+  width: 50%;
+}
+
+/* ******* PAGE PROGRAMME ******* */
+.contentprog {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-image: url("/img/pgprogramme/Machine.jpg");
+  overflow: hidden;
+}
+
+.deco_prog {
+  background-color: #001988;
+  height: 4vh;
+  width: 100%
+}
+
+.triangle-prog {
+  position: absolute;
+  margin-top: 57vh;
+  margin-left: 58vw;
+  z-index: 1000;
+}
+
+h1 {
+  margin-left: 50px;
+  margin-top: 400px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.contentpdf {
+  background: url("/img/pgprogramme/Odyssée-couv.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  height: 2100px;
+  justify-content: center;
+}
+
+.button1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #f2f2db;
+  color: rgb(173, 25, 25);
+  border: 1px solid #425a74;
+  display: inline-block;
+  margin-top: 1000px;
+  margin-bottom: 50px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.button1:hover {
+  background: white;
+  color: #425a74;
+  text-decoration: none;
+}
+
+/* ******* PAGE PARTENAIRES ******* */
+.row {
+  justify-content: center;
+}
+
+.list-group-item {
+  border: none;
+  padding: 100px;
+}
+
+.list-group-item img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  padding: .25rem;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.list-group-item img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* ******* PAGE JE M'IMPLIQUE ******* */
+.contentimplique {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-position: 50% 40%;
+  background-image: url("/img/pgparticipe/missionbassinminier.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.participe {
+  margin-left: 50px;
+  margin-top: 395px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.explicationimplication {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.titreimplcation {
+  text-align: center;
+}
+
+.btn-dark {
+  margin-left: 160px;
+  text-align: center;
+}
+
+.containerimplique {
+  margin-top: 40px;
+}
+
+.clausedeloi {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.coloneGauche {
+  border: black;
+}
+
+.coloneMilieux {
+  border: black;
+}
+
+.coloneDroite {
+  border: black;
+}
+
+.lienimp {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.boutform {
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+/* FORMULAIRE JE M'IMPLIQUE POUR LES HABITANTS  */
+.habitant {
+  margin-left: 50px;
+  margin-top: 395px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.projet {
+  margin-left: 50px;
+  margin-top: 395px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.grdent {
+  margin-left: 50px;
+  margin-top: 395px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.form-group {
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.row.formulaire{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+form{
+  margin-right: 40px;
+}
+
+.coloneGauche{
+  margin-left: 50px;
+}
+
+.btnsub{
+  margin-right: 100px;
+}
+/* ******* PAGE JE SÉJOURNE ******* */
+.sejourne {
+  margin-left: 50px;
+  margin-top: 395px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px #444;
+}
+
+.contentsejour {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-image: url("/img/pgsejourne/sejourne.jpg");
+  /* recadre la vue de l'image */
+  background-position: 100% 30%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.deco_sejour {
+  background-color: #001988;
+  height: 4vh;
+  width: 100%
+}
+
+.triangle-sejour {
+  position: absolute;
+  margin-top: 56vh;
+  margin-left: 58vw;
+  z-index: 1000;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row2 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  padding-top: 30px;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 55px;
+}
+
+.logoOT {
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.row2 .logoOT {
+  width: 50%;
+}
+
+/* ******* FOOTER ******* */
+/* Place la barre de navigation au bas de la page */
+.navbar_footer {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style les liens à l'intérieur de la barre de navigation */
+.navbar_footer a {
+  float: left;
+  display: block;
+  color: #414145;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 80px;
+}
+
+/* Changer la couleur des liens sur le vol stationnaire */
+.navbar_footer a:hover {
+  color: rgb(126, 117, 117);
+}
+
+/* Ajouter une couleur d'arrière-plan verte au lien actif */
+.navbar_footer a.active {
+  color: white;
+}
+
+/* Cacher le lien qui devrait ouvrir et fermer la barre de navigation sur les petits écrans */
+.navbar_footer .icon {
+  display: none;
+}
+
+/* Requêtes média */
+/* Lorsque l'écran fait moins de 600 pixels de large, masquez tous les liens, sauf le premier ("Accueil"). */
+/* Afficher le lien qui contient doit ouvrir et fermer la barre de navigation (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar_footer {
+      display: none;
+  }
+  .navbar_footer a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* La classe "responsive" est ajoutée à la barre de navigation avec JavaScript lorsque l'utilisateur clique sur l'icône. */
+/* Cette classe rend la barre de navigation parfaite sur les petits écrans (affiche les liens verticalement au lieu d'horizontalement) */
+@media screen and (max-width: 600px) {
+  .navbar_footer.responsive a.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar_footer.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
