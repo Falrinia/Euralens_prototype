@@ -20,9 +20,6 @@
 
   <!-- CODE POUR L'EXPLICATION DE LA PAGE -->
   <h2 class="titreimplcation">Contactez-nous</h2>
-  <h4>Euralens Maison syndicale des mineurs 
-30/32 rue Casimir Beugnet, 62300 Lens 
-03 21 20 50 44</h4>
   <br>
   <br>
 
@@ -41,6 +38,10 @@
                         <div class="coloneDroite">     
                         <h3>Mélanie LORIOT : Chargée de mission</h3>
                         <a href="mailto:"melanie.loriot@euralens.org>melanie.loriot@euralens.org</a> 
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             <br>
                             <br>
                           <p class="explicationimplication">

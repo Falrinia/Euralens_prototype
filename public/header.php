@@ -3,7 +3,7 @@
     <a class="euralens" href="index.php">
       <img class="logo_euralens" src="img/logo/euralens.png" alt="logo euralens">
     </a>
-    <a class="navbar-brand" href="#accueil">Odyssée</a>
+    <a class="navbar-brand" href="odyssee.php">Odyssée</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,17 +11,14 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="navbar-brand" href="#programme">Programme
+          <a class="navbar-brand" href="programme.php">Programme
           </a>
         </li>
         <li class="nav-item">
-          <a class="navbar-brand" href="#une">La Une</a>
+          <a class="navbar-brand" href="implique.php">Je participe</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-brand" href="#implique">Je participe</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar-brand" href="#sejourne">Je séjourne</a>
+          <a class="navbar-brand" href="sejourne.php">Je séjourne</a>
         </li>
         <li class="nav-item">
           <a class="navbar-brand" href="#colloque">Le colloque</a>
